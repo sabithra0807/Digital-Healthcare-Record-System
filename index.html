@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Healthcare Record System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Digital Healthcare Record System</h1>
+
+    <div class="container">
+
+        <h2>Patient Record</h2>
+
+        <input type="text" id="name" placeholder="Patient Name">
+        <input type="number" id="age" placeholder="Age">
+        <input type="text" id="disease" placeholder="Disease">
+        <input type="text" id="doctor" placeholder="Doctor Name">
+
+        <button onclick="addRecord()">Add Patient</button>
+
+        <h2>Patient Records</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Disease</th>
+                    <th>Doctor</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="patientTable">
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
